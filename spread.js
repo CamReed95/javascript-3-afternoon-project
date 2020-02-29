@@ -18,6 +18,7 @@ let product = {
 }
 
 // code here
+const newProduct = {...product} = 'productCopy'
 
 
 
