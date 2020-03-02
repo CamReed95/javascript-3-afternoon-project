@@ -39,13 +39,13 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-// function showValues( obj ) {
-//   let str = ''
-//   for (var key in obj) {
-//    str += obj[key]
-//   }
-//   return str
-// }
+function showValues( obj ) {
+  let str = ''
+  for (var key in obj) {
+   str += obj[key]
+  }
+  return str
+}
 
 
 
@@ -59,13 +59,13 @@
 */
 
 //Code Here
-// function greaterThan10(obj) {
-//   for (let key in obj) 
-//   if (obj[key] > 10) {
-//     obj[key] = 0 
-//   }
-//   return obj
-// }
+function greaterThan10(obj2) {
+  for (let key in obj2) 
+  if (obj2[key] > 10) {
+    obj2[key] = 0 
+  }
+  return obj2
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -77,14 +77,14 @@
 */
 
 //Code Here
-// function double(obj) {
-//   console.log('obj in double function', obj)
-//   for(let key in obj) {
-//     console.log('key', [key])
-//     obj[key] *=2
-//   }
-//   return obj
-// }
+function double(obj3) {
+  // console.log('obj in double function', obj3)
+  for(let key in obj3) {
+    // console.log('key', [key])
+    obj3[key] *=2
+  }
+  return obj3
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -97,18 +97,20 @@
 */
 
 //Code Here
-// function secrets(obj) {
-//   var str = ''
-//     for (let key in obj) {
-//       if (key.startsWith('sh')) {
-//       str = str.concat(key)
-//       }
-//     }
-//     return str
-//   }
-  
-//   secrets(person)
-  
+  function secrets(obj) {
+    // console.log("problem 4 object", obj)
+    let str = ''
+    for (const key in obj) {
+        console.log("problem 4 keys", key)
+        if(key.startsWith("sh")){
+          str = str + obj[key]
+        }
+        console.log("problem 4 answer", str)
+      } 
+      return str
+  } 
+
+
   
 
 /* 
@@ -140,20 +142,15 @@
 
 //Code Here
 
-// let obj = {
-//   name: 'john',
-//   password: 'password'
-// }
+let obj5 = {
+  password: 'hi',
+  name: 'john'
+}
 
-
-// removePassword(obj) {
-//   for (let prop in obj) {
-//     if (prop === 'password') {
-//       delete obj.password
-//     }
-//   }
-//   return obj
-// }
+function removePassword(obj5) {
+  delete obj5.password
+  return obj5
+} 
 
 
 ////////// PROBLEM 6 //////////
@@ -165,6 +162,12 @@ var deleteTheBigNumbers = {
   third: 110,
   fourth: 200
 }
+
+
+
+
+
+
 // Do not edit the code above.
 
 /*
@@ -172,12 +175,13 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-// function deleteTheBigNumbers(obj)
-//   for (let prop in obj) {
-//     if (deleteTheBigNumbers.key > 20) {
-//       delete deleteTheBigNumbers.key
-//     }
-// }
+function deleteThem(obj) {
+  for (let key in obj) {
+    if (deleteTheBigNumbers[key] > 20) {
+      delete deleteTheBigNumbers.key
+    }
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -216,10 +220,3 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-// function hiddenTreasure(obj) {
-//   for (let key in obj) {
-//     if()
-//   }
-//   return 
-// }
-
