@@ -162,26 +162,18 @@ var deleteTheBigNumbers = {
   third: 110,
   fourth: 200
 }
-
-
-
-
-
-
 // Do not edit the code above.
-
 /*
   Write a for in loop that deletes every property from the object deleteTheBigNumbers whose value is greater than 100.
 */
-
 //Code Here
-function deleteThem(obj) {
+
   for (let key in obj) {
-    if (deleteTheBigNumbers[key] > 20) {
+    if (deleteTheBigNumbers[i] >= 20) {
       delete deleteTheBigNumbers.key
     }
   }
-}
+
 
 
 ////////// PROBLEM 7 //////////
@@ -195,16 +187,12 @@ function deleteThem(obj) {
 
 //Code Here
 
-// let person = {
-//   name: 'Kevin'
-// }
-
-// function startsWithK(person) {
-//   let updatedObj = {}
-//   for (let key in person) {
-//     if (key.startsWith(K))
-    
-//   } return updatedObj
+// function startsWithK(obj) {
+//   for (let prop in obj) {
+//     if (prop.startsWith('K')) {
+//       delete obj[prop]
+//     }
+//   } return obj
 // }
 
 
@@ -220,3 +208,10 @@ function deleteThem(obj) {
 */
 
 //Code Here
+// function hiddenTreasure(obj8) {
+//   for (let prop in obj) {
+//     if (pbj8.prop != 'treasure') {
+//       delete obj8.prop
+//     }
+//   } return obj8
+// }
