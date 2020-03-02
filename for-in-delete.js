@@ -39,13 +39,13 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  let str = ''
-  for (var key in obj) {
-   str += obj[key]
-  }
-  return str
-}
+// function showValues( obj ) {
+//   let str = ''
+//   for (var key in obj) {
+//    str += obj[key]
+//   }
+//   return str
+// }
 
 
 
@@ -59,13 +59,13 @@ function showValues( obj ) {
 */
 
 //Code Here
-function greaterThan10(obj) {
-  for (let key in obj) 
-  if (obj[key] > 10) {
-    obj[key] = 0 
-  }
-  return obj
-}
+// function greaterThan10(obj) {
+//   for (let key in obj) 
+//   if (obj[key] > 10) {
+//     obj[key] = 0 
+//   }
+//   return obj
+// }
 
 
 ////////// PROBLEM 3 //////////
@@ -77,11 +77,14 @@ function greaterThan10(obj) {
 */
 
 //Code Here
-function double(obj) {
-  for (let key in obj) {
-  return obj[key] *= 2 
-}
-}
+// function double(obj) {
+//   console.log('obj in double function', obj)
+//   for(let key in obj) {
+//     console.log('key', [key])
+//     obj[key] *=2
+//   }
+//   return obj
+// }
 
 ////////// PROBLEM 4 //////////
 
@@ -94,13 +97,19 @@ function double(obj) {
 */
 
 //Code Here
-function secrets(obj) {
-  var str = ''
-for (let key in obj)
-if (key === 's' && key === 'h')
-return key + str
-}
-
+// function secrets(obj) {
+//   var str = ''
+//     for (let key in obj) {
+//       if (key.startsWith('sh')) {
+//       str = str.concat(key)
+//       }
+//     }
+//     return str
+//   }
+  
+//   secrets(person)
+  
+  
 
 /* 
   Sometimes it's needed to delete object properties. 
@@ -130,9 +139,21 @@ return key + str
 */
 
 //Code Here
-function removePassword(obj) {
-  delete removePassword[prop]
-}
+
+// let obj = {
+//   name: 'john',
+//   password: 'password'
+// }
+
+
+// removePassword(obj) {
+//   for (let prop in obj) {
+//     if (prop === 'password') {
+//       delete obj.password
+//     }
+//   }
+//   return obj
+// }
 
 
 ////////// PROBLEM 6 //////////
@@ -151,11 +172,12 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-for (let key in deleteTheBigNumbers) {
-  if (key > 20) {
-    delete deleteTheBigNumbers[key]
-  }
-}
+// function deleteTheBigNumbers(obj)
+//   for (let prop in obj) {
+//     if (deleteTheBigNumbers.key > 20) {
+//       delete deleteTheBigNumbers.key
+//     }
+// }
 
 
 ////////// PROBLEM 7 //////////
@@ -168,11 +190,17 @@ for (let key in deleteTheBigNumbers) {
 */
 
 //Code Here
-// function startsWithK(obj) {
-//   for (let key in obj) {
-//     if ()
-//   }
-//   return
+
+// let person = {
+//   name: 'Kevin'
+// }
+
+// function startsWithK(person) {
+//   let updatedObj = {}
+//   for (let key in person) {
+//     if (key.startsWith(K))
+    
+//   } return updatedObj
 // }
 
 
