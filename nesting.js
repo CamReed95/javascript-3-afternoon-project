@@ -51,8 +51,16 @@ var employees = [
 */
 
 //Code Here
+
 function employeeUpdater() {
-for (let )
+  let newArr = []
+for (let key in obj)
+if (employees.firstName === 'Theo') {
+  delete employee.firstName
+} else if (employees.firstName === 'Lorie') {
+  employeeUpdater.replace(department, 'HR')
+}
+return newArr
 }
 
 
@@ -71,7 +79,9 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
+removeDuplicates() {
+  
+}
 
 
 ////////// PROBLEM 3 //////////
