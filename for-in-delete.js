@@ -168,9 +168,9 @@ var deleteTheBigNumbers = {
 */
 //Code Here
 
-  for (let key in obj) {
-    if (deleteTheBigNumbers[i] >= 20) {
-      delete deleteTheBigNumbers.key
+  for (let key in deleteTheBigNumbers) {
+    if (deleteTheBigNumbers[key] > 100) {
+      delete deleteTheBigNumbers[key]
     }
   }
 
@@ -187,13 +187,14 @@ var deleteTheBigNumbers = {
 
 //Code Here
 
-// function startsWithK(obj) {
-//   for (let prop in obj) {
-//     if (prop.startsWith('K')) {
-//       delete obj[prop]
-//     }
-//   } return obj
-// }
+function startsWithK(obj) {
+  for (let prop in obj) {
+    if (prop[0] === 'k') {
+      delete obj[prop]
+    }
+  } 
+  return obj
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -208,10 +209,10 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-// function hiddenTreasure(obj8) {
-//   for (let prop in obj) {
-//     if (pbj8.prop != 'treasure') {
-//       delete obj8.prop
-//     }
-//   } return obj8
-// }
+function hiddenTreasure(obj) {
+  for (let prop in obj) {
+    if (!obj[prop].includes('treasure')) {
+      delete obj[prop]
+    }
+  } return obj
+}
