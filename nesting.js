@@ -77,10 +77,14 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-removeDuplicates() {
-
-}
-
+function removeDuplicates() {
+  for (let i = 0; i < workplaceAccidents.length; i++) {
+      if(workplaceAccidents[i] === 56) {
+        delete workplaceAccidents[i]
+      } 
+      workplaceAccidents.push(56)
+  } return removeDuplicates
+}      
 
 ////////// PROBLEM 3 //////////
 
@@ -107,8 +111,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = car.catFriends.activities[1];
+var fluffy2ndFriend = cat.catFriends[name];
 
 
 
@@ -149,7 +153,13 @@ var myCar = {
 */
 
 //Code Here
-
+function recordCleaner () {
+  for (let i = 0; i < myCar.accidents.length; i++) {
+    if (myCar.accidents[0].atFaultForAccident = true) {
+       myCar.accidents[0].atFaultForAccident.push('false')
+    }
+  }
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -168,5 +178,16 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
-
+function looper() {
+  for (let i = 0; i < numsArr.length; i++) {
+    if (numsArr[i] % 2 !== 0) {
+      return 'odd'
+    }
+    for (let j = 0; j < numsArr.length; j++) {
+      if (numsArr[j] % 2 === 0) {
+        return 'even'
+      }
+    } 
+  } return numsArr
+}
 
